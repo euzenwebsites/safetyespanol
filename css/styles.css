@@ -365,8 +365,17 @@ h4 {
 
 .boxShadow {
     border: 2px solid rgb(219, 209, 209);
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0.5, 0, 0, 0.5);
+}
+.boxShadow:hover {
+    border: 4px solid rgb(219, 209, 209);
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0.5, 0, 0, 0.5);
+}
+ul>li{
+    margin-left: -25px;
+    margin-right: -10px;
 }
 
 /* .hoverColors:hover{
@@ -426,9 +435,9 @@ header p {
     color: #fff;
 }
 
-.hero-text {
+/* .hero-text {
     padding-top: 32px;
-}
+} */
 
 /*
 ===========
