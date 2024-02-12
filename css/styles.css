@@ -377,6 +377,9 @@ ul>li{
     margin-left: -25px;
     margin-right: -10px;
 }
+.pblack > p {
+    color: black !important;
+}
 
 /* .hoverColors:hover{
     color: white;
