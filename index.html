@@ -39,12 +39,20 @@
       color: white;
     }
 
+    @media (min-width: 640px) {
+      .body {
+        justify-content: space-between !important;
+        gap: 18px;
+      }
+    }
+
     .body {
+      justify-content: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 18px;
+      gap: 50px;
     }
+
 
     .container2 {
       backdrop-filter: blur(16px) saturate(180%);
@@ -313,6 +321,78 @@
       padding: 5px 10px;
       margin: 0 5px;
     }
+
+    .imgCont {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .imgContin {
+      width: 100%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .imgContin1 {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    @media (min-width: 768px) {
+      .imgCont {
+        flex-direction: row;
+        gap: 8px;
+      }
+
+      .imgContin {
+        width: 45%;
+      }
+
+      .imgContin1 {
+        width: 45%;
+        margin-top: 0px;
+      }
+    }
+
+    .benefitsCont {
+      padding-right: 5px;
+      padding-left: 20px;
+    }
+
+    .imgCont2 {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+    }
+
+    .imgCont2in {
+      width: 100%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .imgCont2in1 {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    @media (min-width: 768px) {
+      .imgCont2 {
+        flex-direction: row !important;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .imgCont2in {
+        width: 45%;
+      }
+
+      .imgCont2in1 {
+        width: 45%;
+        margin-top: 0px;
+      }
+    }
   </style>
 
   <!-- Rale Font + Work Sans Font -->
@@ -342,14 +422,7 @@
 <body id="page-top" style="overflow-x: hidden;">
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top alt animated navbar-custom">
     <div class="container">
-      <a class="navbar-brand" href="./index.html">SAFE BEHAVIORAL DNA – WORKPLACE SAFETY TEST</a>
-
-      <!-- <button class="navbar-toggler material-ripple" type="button" data-toggle="collapse"
-        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="icon-bar i1"></span>
-        <span class="icon-bar i2"></span>
-        <span class="icon-bar i3"></span> -->
+      <a class="navbar-brand" href="./index.html">SAFE BEHAVIORAL DNA</a>
       </button>
     </div>
   </nav>
@@ -367,7 +440,6 @@
           </div>
           <div class="col-lg-5">
             <div>
-              <!-- <img src="assets/" alt="Ebook" class="img-fluid book-mockup"> -->
             </div>
           </div>
         </div>
@@ -416,17 +488,15 @@
   </section>
 
   <section id="overview">
-    <!-- Start Chapters List -->
     <div style="padding-right: 5%; padding-left: 5%;">
       <div style="display: flex !important; justify-content: center !important; align-items: center !important;"
         class="">
         <h2>Safe Behavioral DNA – Prueba de seguridad <br>
-          laboralkyi</h2>
-        <!-- <hr class="left"><i class="icon icon-basic-spread-text"></i> -->
+          laboral</h2>
       </div>
       <hr class="right">
-      <div style="margin-bottom: 200px; display: flex; margin-top: 50px; gap: 50px;">
-        <div style="flex: 0.5; height: fit-content; ">
+      <div class="safetyparaCont">
+        <div class="firstPara">
           <h3 style="font-weight: 600;">Prueba de seguridad para reducir
             riesgos de accidentes en el lugar de
             trabajo
@@ -454,13 +524,13 @@
 
           </p>
         </div>
-        <div style="flex: 0.5; height: fit-content;">
+        <div class="secondPara">
           <h3 style="font-weight: 600;">Identificar candidatos más seguros permite
             reducir la tasa de accidentes laborales
             ayudando a generar ahorros y mejorar la
             cultura de seguridad en la empresa
           </h3>
-          <p style="margin-top: 80px;">
+          <p style="margin-top: 20px;">
             El factor humano explicaría al menos el 80% de los
             accidentes laborales, asociados a conductas inseguras o
             temerarias. De esta manera, es esencial implementar
@@ -476,155 +546,12 @@
           </p>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/reduce.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Reduzca los costos asociados a los accidentes laborales en su empresa</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/minimize.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Reduzca los accidentes laborales y las pérdidas financieras.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/increase.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Reduzca los accidentes laborales y las pérdidas financieras.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/boost.png" alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Aumente a motivação dos seus colaboradores e posicione a sua empresa como socialmente responsável.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/benifits.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>SBDNA y su uso permite enormes beneficios para su organización generando un amplio bienestar individual
-                y colectivo</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/acheive.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Logre una tasa de retorno de la inversión altamente atractiva al usar la prueba Safe Behavioral DNA.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/identify.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Identifique colaboradores con conductas seguras fortaleciendo una cultura de seguridad en su empresa.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/assessment.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Utilice nuestra plataforma de evaluaciones para complementar otras áreas de evaluación de sus
-                candidatos o empleados.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/reports.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Visualice los reportes y estadísticas de uso por medio de una plataforma de fácil utilización.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/risk.png" alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Identifique el nivel de riesgo de sus empleados a efectos de poder orientar programas de capacitación y
-                desarrollo de conducta segura en este grupo, permitiéndole optimizar recursos al focalizar los
-                programas. Obtenga mejores resultados.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/reduce.png"
-                  alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Use las orientaciones de desarrollo incluidos en el reporte de Safe Behavioral DNA para elaborar
-                programas de intervención y mejora de los indicadores de riesgo de forma efectiva.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="chapters-list">
-            <div class="chapter-list-icon">
-              <i><img style="height: 100px; width: 42px; object-fit: contain;" src="/assets/risk.png" alt="reduce"></i>
-            </div>
-            <div class="chapter-list-text">
-              <p>Complemente su análisis de riesgo con nuestra herramienta exclusiva WorkSafeRR, orientada a identificar
-                los factores claves para la existencia de un entorno laboral seguro</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 
   <div class="container" style="margin-top: -90px;">
     <div class="section-title">
       <h2>Especificaciones Técnicas</h2>
-      <!-- <p>
-          Make better hiring decisions
-        </p> -->
-      <!-- <hr class="left"><i class="icon icon-basic-spread-text"></i> -->
       <hr class="right">
     </div>
     <div class="row body" style="margin-top: -30px;">
@@ -775,9 +702,8 @@
     </div>
     <section style="margin-top: 50px;">
       <div class="container">
-        <div style="display: flex; gap: 50px; justify-content: space-between; ">
-          <div class="boxShadow"
-            style="width: fit-content; padding-top: 20px; padding-left: 15px; padding-right: 30px;">
+        <div style="display: flex; gap: 50px; justify-content: center; flex-wrap: wrap;">
+          <div class="boxShadow" style="max-width: 400px; min-width: 250; padding-top: 20px; padding-left: 1%;">
             <h5 style="text-align: center; font-size: large; font-weight: 600;">Reduzca los costos asociados a los
               accidentes laborales en su
               empresa
@@ -795,8 +721,7 @@
                 al usar la prueba Safe Behavioral DNA.</li>
             </ul>
           </div>
-          <div class="boxShadow"
-            style="width: fit-content; padding-top: 20px; padding-left: 15px; padding-right: 30px;">
+          <div class="boxShadow" style="max-width: 400px; min-width: 250; padding-top: 20px; padding-left: 1%;">
             <h5 style="text-align: center; font-size: large; font-weight: 600;">Fortalezca la cultura de seguridad en su
               empresa
             </h5>
@@ -840,42 +765,45 @@
       <div class="container">
         <div class="section-title">
           <h2>Origenes del test Safe Behavioral DNA</h2>
-          <!-- <p></p> -->
-          <!-- <hr class="left"><i class="icon icon-basic-spread-text"></i> -->
           <hr class="right">
         </div>
-        <!-- <section class="our_story_area" style="margin-bottom: 50px;"> -->
         <div class="container">
           <div class="row">
             <div class="story_details pBlack">
               <h4 style="color: #EE5A3F; font-size: medium; margin-top: -50px; text-align: center;"> El Safe Behavioral
                 DNA fue desarrollado a solicitud de la Administradora de Riesgos Bolivar en Colombia, institución que
                 provee de herramientas de prevención de riesgo a más de 1 millón de trabajadores en Colombia.</h4>
-              <p style="color: black;">El Safe Behavioral DNA fue desarrollado a solicitud de la Administradora de Riesgos Bolivar en
+              <p style="color: black;">El Safe Behavioral DNA fue desarrollado a solicitud de la Administradora de
+                Riesgos Bolivar en
                 Colombia, institución que provee
                 de herramientas de prevención de riesgo a más de 1 millón de trabajadores en Colombia</p>
 
-              <p style="margin-top: -5px; color: black; "> Para su creación, en primer lugar, se realizó inicialmente una extensa
+              <p style="margin-top: -5px; color: black; "> Para su creación, en primer lugar, se realizó inicialmente
+                una extensa
                 revisión bibliográfica de los factores individuales asociados a los accidentes laborales,
                 desarrollando un cuestionario preliminar aplicado a mil trabajadores pertenecientes a 11 empresas de
                 distintos sectores productivos, tales como construcción, minería, transporte, industria, servicios,
                 entre otros.</p>
 
-              <p style="margin-top: -5px; color: black; "> La muestra de los mil trabajadores consideraba dos grupos de empleados:
+              <p style="margin-top: -5px; color: black; "> La muestra de los mil trabajadores consideraba dos grupos de
+                empleados:
                 600 que habían sufrido accidentes laborales documentados en los últimos dos años y 400 que no habían
                 experimentado accidentes en el mismo periodo, ambos grupos pertenecientes a las mismas posiciones y
                 empresas seleccionadas.
               </p>
-              <p style="margin-top: -5px; color: black; "> Se elaboró un cuestionario de 136 ítems orientado a diferenciar ambos
+              <p style="margin-top: -5px; color: black; "> Se elaboró un cuestionario de 136 ítems orientado a
+                diferenciar ambos
                 grupos, alcanzando una confiabilidad de 0.93 y diferencias significativas entre ambos. El modelo
                 construido se fundamentó en la extensa evidencia científica original, identificando cuatro factores
                 que diferenciaban a ambos grupos de trabajadores en términos de su historial de accidentabilidad:
                 Cumplimiento de Normas, Autocontrol, Prudencia - Aversión al Riesgo y Concentración.
               </p>
-              <p style="margin-top: -5px; color: black; " class="text-2xl">Estos cuatro factores son fundamentales al momento de
+              <p style="margin-top: -5px; color: black; " class="text-2xl">Estos cuatro factores son fundamentales al
+                momento de
                 diferenciar a personas de acuerdo con su comportamiento laboral seguro en las empresas
               </p>
-              <p style="margin-top: -5px; color: black; " class="text-2xl">Luego de un par de años de estudios internacionales,
+              <p style="margin-top: -5px; color: black; " class="text-2xl">Luego de un par de años de estudios
+                internacionales,
                 abarcando países como México, Chile, Perú, Rusia, India, Italia, entre otros,
                 se decidió desarrollar dos versiones especiales y reducidas del modelo original, sobre la base de más de
                 200 mil aplicaciones
@@ -896,12 +824,14 @@
                 su uso para
                 evaluación de trabajadores actuales.
               </p>
-              <p style="margin-top: -10px; color: black;">Actualmente la prueba de seguridad laboral Safe Behavioral DNA es utilizada
+              <p style="margin-top: -10px; color: black;">Actualmente la prueba de seguridad laboral Safe Behavioral DNA
+                es utilizada
                 en diversos países latinoamericanos por empresas
                 interesadas en reducir los accidentes laborales y conductas de riesgo, al mejorar sus procesos de
                 selección de personal.
               </p>
-              <p style="margin-top: -10px; color: black;">Dentro de los países donde se usa mayoritariamente destacan México, Chile,
+              <p style="margin-top: -10px; color: black;">Dentro de los países donde se usa mayoritariamente destacan
+                México, Chile,
                 Colombia, Perú, Brasil, Ecuador, Guatemala, entre
                 otros.</p>
 
@@ -918,36 +848,10 @@
       </div>
   </div>
   </section>
-  <!-- End Feedback/Reviews Section -->
-  <!-- <div class="carousel">
-    <div class="carousel-slides">
-      <div class="slide">
-        <div class="slide-text">Cumplimiento de Normas</div>
-        <img src="/assets/carousel/Capture.JPG" alt="Slide 1">
-      </div>
-      <div class="slide">
-        <img src="/assets/carousel/Capture2.JPG" alt="Slide 2">
-        <div class="slide-text">Autocontrol</div>
-      </div>
-      <div class="slide">
-        <img src="/assets/carousel/Capture3.JPG" alt="Slide 3">
-        <div class="slide-text">Prudencia - Aversión al Riesgo</div>
-      </div>
-      <div class="slide">
-        <img src="/assets/carousel/Capture4.JPG" alt="Slide 4">
-        <div class="slide-text">Concentración</div>
-      </div>
-    </div>
-    <div class="carousel-nav">
-      <button onclick="prevSlide()">Previa</button>
-      <button onclick="nextSlide()">próximac</button>
-    </div>
-  </div> -->
-  <!-- Start About The Author Section -->
   <section>
     <div class="container">
-      <div style="display: flex; justify-content: space-between; flex: wrap; gap: 12px;">
-        <div class="" style="width: 50%; padding-top: 20px; padding-left: 15px; padding-right: 30px;">
+      <div class="imgCont">
+        <div class="imgContin">
           <h5 style="text-align: center; font-size: larger; font-weight: 700;">Reduce efectivamente la tasa de riesgos
             laborales
             identificando personas más seguras
@@ -967,7 +871,7 @@
               accidentes de forma efectiva</li>
           </ul>
         </div>
-        <img style="object-fit: contain; width: 50%;" src="/assets/carousel/Capture.JPG" alt="Slide 1">
+        <img style="object-fit: contain;" class="imgContin1" src="/assets/carousel/Capture.JPG" alt="Slide 1">
       </div>
 
       <div style="margin-top: 120px;">
@@ -977,9 +881,9 @@
           <!-- <hr class="left"><i class="icon icon-basic-spread-text"></i> -->
           <hr class="right">
         </div>
-        <div style="display: flex; justify-content: space-between; flex: wrap; gap: 12px; margin-top: -60px;">
-          <img style="object-fit: contain; width: 50%;" src="/assets/carousel/Capture1.jpg" alt="Slide 1">
-          <div class="" style="width: 50%; ">
+        <div class="imgCont">
+          <img style="object-fit: contain;" class="imgContin" src="/assets/carousel/Capture1.jpg" alt="Slide 1">
+          <div class="imgContin1">
             <ul style="margin-top: 30px !important; list-style-type: none;">
               <li> Una importante empresa industrial
                 mexicana aplicó la prueba Safe
@@ -1029,7 +933,7 @@
     </div>
   </section>
 
-  <section style="margin-top: -80px;">
+  <section style="margin-top: -50px;">
     <div class="container">
       <div class="section-title">
         <h2>Factores asociados a conducta laboral
@@ -1061,51 +965,57 @@
   </section>
 
 
-  <section id="benifits" style="margin-top: -70px;">
+  <section id="" style="margin-top: -70px;">
     <div class="container">
       <div class="section-title">
         <h2>Beneficios del cliente</h2>
         <hr class="right">
       </div>
-      <div class="row">
+      <div class="row benefitsCont">
         <div class="story_details" style="margin-top: -70px; ;">
-          <p style="color: black;">Como cliente de nuestras soluciones, su empresa recibirá acceso a las pruebas escogidas y
+          <p style="color: black;">Como cliente de nuestras soluciones, su empresa recibirá acceso a las pruebas
+            escogidas y
             a la plataforma de procesamiento online, asimismo a un apoyo de nuestros expertos para el
             mejor uso de estas soluciones.</p>
-          <p style="margin-top: -30px; color: black !important;">Contará con capacitación en el uso de nuestras herramientas y apoyo a material y
+          <p style="margin-top: -30px; color: black !important;">Contará con capacitación en el uso de nuestras
+            herramientas y apoyo a material y
             documentación de base de los modelos desarrollados.</p>
           <p style="margin-top: -30px; color: black !important;">
             Estamos a su disposición para apoyarlo a través de una asesoría integral y profesional.
           </p>
           <div>
             <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">CAPACITACIÓN:</h3>
-            <p style="color: black !important;">Desde el primer día y durante todo el ciclo de servicio, tendrá a su disposición capacitaciones de
+            <p style="color: black !important;">Desde el primer día y durante todo el ciclo de servicio, tendrá a su
+              disposición capacitaciones de
               forma presencial o en línea, para todos los administradores de las pruebas. Apoyado con material
               audiovisual exclusivo de entrenamiento</p>
           </div>
           <div>
             <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">APOYO:</h3>
-            <p style="color: black !important;">Nuestro equipo estará siempre disponible para contestar las preguntas de los usuarios, por lo general
+            <p style="color: black !important;">Nuestro equipo estará siempre disponible para contestar las preguntas de
+              los usuarios, por lo general
               con tiempos de respuesta casi inmediatos, estableciendo una estrecha relación de largo plazo.</p>
           </div>
           <div>
             <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">INVESTIGACIÓN:</h3>
-            <p style="color: black !important;">Investigaciones y publicaciones científicas ofrecen un respaldo sólido para las decisiones en materia
+            <p style="color: black !important;">Investigaciones y publicaciones científicas ofrecen un respaldo sólido
+              para las decisiones en materia
               de evaluación y permiten cálculos precisos de ROI.</p>
           </div>
           <div>
             <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">ASESORÍA:</h3>
-            <p style="color: black !important;">Somos un equipo interdisciplinario de expertos e investigadores con vasta experiencia en los campos
+            <p style="color: black !important;">Somos un equipo interdisciplinario de expertos e investigadores con
+              vasta experiencia en los campos
               de la psicología, psicometría y la evaluación del personal.</p>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; gap: 5%;">
-            <div>
+          <div class="imgCont2">
+            <div class="imgCont2in">
               <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">Reporte Individual:</h3>
               <p style="color: black !important;">Tome mejores decisiones de contratación de forma inmediata.
                 Usted visualiza los resultados de las personas evaluadas en línea luego de terminado el cuestionario.
               </p>
             </div>
-            <img src="./assets/carousel/Capture2.JPG" alt="" style="width: 50%; object-fit: contain;">
+            <img src="./assets/carousel/Capture2.JPG" alt="" style="object-fit: contain;" class="imgCont2in1">
           </div>
           <p style="margin-top: 15px;"> La interpretación de los puntajes es muy sencillo e intuitivo, facilitando
             la toma de decisiones.
@@ -1117,14 +1027,9 @@
             a Excel los datos de las evaluaciones realizadas.
           </p>
         </div>
-        <!--end .story_details-->
-        <!--end .col-md-10-->
       </div>
     </div>
   </section>
-
-
-
 
   <section id="contact" style="display: inline; width: 100vw; margin-bottom: 580px !important;">
     <div class="container">
@@ -1139,8 +1044,8 @@
           <form id="contact-form" method="POST">
             <div class="form-group">
               <label for="fullName" class="sr-only">Nombre</label>
-              <input type="text" class="form-control form-control-lg" name="fullName" id="fullName"
-                placeholder="Nombre" required="required">
+              <input type="text" class="form-control form-control-lg" name="fullName" id="fullName" placeholder="Nombre"
+                required="required">
             </div>
             <div class="form-group">
               <label for="email" class="sr-only">Correo electrónico</label>
@@ -1149,25 +1054,26 @@
             </div>
             <div class="form-group">
               <label for="phoneNo" class="sr-only">Teléfono</label>
-              <input type="text" class="form-control form-control-lg" name="phoneNo" id="phoneNo"
-                placeholder="Teléfono" required="required">
+              <input type="text" class="form-control form-control-lg" name="phoneNo" id="phoneNo" placeholder="Teléfono"
+                required="required">
             </div>
             <div class="form-group">
               <label for="Country" class="sr-only">País</label>
-              <input type="text" class="form-control form-control-lg" name="Country" id="Country"
-                placeholder="País" required="required">
+              <input type="text" class="form-control form-control-lg" name="Country" id="Country" placeholder="País"
+                required="required">
             </div>
             <div class="form-group">
               <label for="Company" class="sr-only">Empresa</label>
-              <input type="text" class="form-control form-control-lg" name="Company" id="Company"
-                placeholder="Empresa" required="required">
+              <input type="text" class="form-control form-control-lg" name="Company" id="Company" placeholder="Empresa"
+                required="required">
             </div>
             <div class="form-group">
               <label for="message" class="sr-only">Mensaje</label>
               <textarea class="form-control form-control-lg" name="Mensaje" id="Mensaje" rows="4" placeholder="Mensaje"
                 required="required"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary material-ripple" style="margin-bottom: 380px !important;">Enviar Mensaje</button>
+            <button type="submit" class="btn btn-primary material-ripple"
+              style="margin-bottom: 380px !important;">Enviar Mensaje</button>
             <div class="form-message"></div>
           </form>
         </div>
