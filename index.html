@@ -55,13 +55,12 @@
 
 
     .container2 {
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      box-shadow: 5px 5px 17px #666666,
+        -5px -5px 17px #ffffff;
       background-color: white;
-      border-radius: 12px;
+      border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.125);
       /* padding: 38px; */
-      filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -69,6 +68,12 @@
       text-align: center;
 
     }
+
+    /* .container2:hover {
+      filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+      box-shadow: 22px 22px 41px #666666,
+        -22px -22px 41px #ffffff;
+    } */
 
     .wrapper {
       width: 300px;
@@ -326,6 +331,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-items: center;
     }
 
     .imgContin {
@@ -364,6 +370,7 @@
       display: flex;
       justify-content: start;
       flex-direction: column;
+      margin-top: 40px;
     }
 
     .imgCont2in {
@@ -393,6 +400,34 @@
         margin-top: 0px;
       }
     }
+
+    .firstPara,
+    .secondPara {
+      padding-top: 12px;
+      padding-right: 2%;
+      padding-left: 2%;
+    }
+
+    .paras>p,
+    .paras>div>p {
+      font-size: large;
+    }
+
+    .bgBanner {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(./assets/banner-bg.jpg);
+      background-attachment: fixed;
+      color: white !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: fit-content;
+    }
+
+    .bgBanner>div>div>p {
+      font-size: x-large;
+    }
   </style>
 
   <!-- Rale Font + Work Sans Font -->
@@ -420,32 +455,24 @@
 </head>
 
 <body id="page-top" style="overflow-x: hidden;">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top alt animated navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-dark alt animated navbar-custom"
+    style="background: linear-gradient(); top: 0 !important; right: 0 !important; left: 0 !important; ">
     <div class="container">
-      <a class="navbar-brand" href="./index.html">SAFE BEHAVIORAL DNA</a>
+      <a class="navbar-brand" href="./index.html" style="font-weight: bolder; font-size: xx-large;">SAFE BEHAVIORAL
+        DNA</a>
       </button>
     </div>
   </nav>
 
-  <header id="home">
+  <div id="home">
     <div class="hero-section" style="background-color: rgba((0), 0, 0, 100);">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="hero-text">
-              <h1 style="width: 900px !important;" class=" bg-red-300">Prueba de seguridad laboral
-              </h1>
-              <a href="#" class="btn btn-light btn-lg t-cap mt-3 material-ripple">Aprende más..</a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div>
-            </div>
-          </div>
-        </div>
+        <h1 style="margin-bottom: 100px;" class=" bg-red-300">Prueba <br> de <br> seguridad <br> laboral
+        </h1>
+        <!-- <a href="#" class="btn btn-light btn-lg t-cap mt-3 material-ripple" >Aprende más..</a> -->
       </div>
     </div>
-  </header>
+  </div>
 
   <section class="statics">
     <div class="container">
@@ -487,7 +514,7 @@
     </div>
   </section>
 
-  <section id="overview">
+  <section class="about-area " style=" margin-bottom: 80px;">
     <div style="padding-right: 5%; padding-left: 5%;">
       <div style="display: flex !important; justify-content: center !important; align-items: center !important;"
         class="">
@@ -495,8 +522,8 @@
           laboral</h2>
       </div>
       <hr class="right">
-      <div class="safetyparaCont">
-        <div class="firstPara">
+      <div class="row d-flex align-items-center bg-grey section-padding" style="margin-top: 60px;">
+        <!-- <div class="firstPara ">
           <h3 style="font-weight: 600;">Prueba de seguridad para reducir
             riesgos de accidentes en el lugar de
             trabajo
@@ -523,33 +550,79 @@
             laborales y conducta segura del evaluado.
 
           </p>
+        </div>-->
+        <h2 style="margin-bottom: 50px; width: 100%; text-align: center;">Prueba de seguridad para reducir
+          riesgos de accidentes en el lugar de
+          Trabajo</h2>
+        <div class="col-lg-6 col-md-12">
+          <div class="about-content">
+
+            <p style="color: black !important;">El test Safe Behavioral DNA Identifica candidatos y
+              empleados actuales con conductas seguras en el trabajo,
+              es decir con menor riesgo de sufrir accidentes laborales
+              en su área de trabajo. </p>
+            <p style="color: black !important;">
+              La prueba psicométrica Safe Behavioral DNA es una
+              herramienta de evaluación exclusiva e integral,
+              desarrollada luego de extensos estudios sobre la conducta
+              segura laboral, en diversos países de Latinoamérica, tales
+              como México, Colombia, Chile y Perú, permitiendo
+              identificar a los candidatos y empleados con alto riesgo de
+              participar de conductas peligrosas y temerarias, y de
+              sufrir accidentes en el lugar de trabajo.
+            </p>
+            <p style="color: black !important;">
+              Se fundamenta en cuatro factores asociados a la
+              seguridad laboral: Cumplimiento de Normas, Autocontrol,
+              Prudencia - Aversión al Riesgo y Concentración.
+            </p>
+            <p style="color: black !important;">
+              Cada candidato o empleado responde en línea el
+              cuestionario en 12 minutos promedio, y las empresas
+              reciben un completo reporte psicométrico de los riesgos
+              laborales y conducta segura del evaluado.
+            </p>
+
+          </div>
         </div>
-        <div class="secondPara">
-          <h3 style="font-weight: 600;">Identificar candidatos más seguros permite
-            reducir la tasa de accidentes laborales
-            ayudando a generar ahorros y mejorar la
-            cultura de seguridad en la empresa
-          </h3>
-          <p style="margin-top: 20px;">
-            El factor humano explicaría al menos el 80% de los
-            accidentes laborales, asociados a conductas inseguras o
-            temerarias. De esta manera, es esencial implementar
-            pruebas psicométricas para selección de personal que
-            identifiquen a personas más seguras, que no tomen
-            riesgos en el trabajo y se comporten de manera segura.
-            El uso de pruebas de seguridad laboral válidas y
-            confiables, permitirá enormes beneficios para las
-            empresas al reducir los costos asociados a los accidentes
-            laborales, asimismo el enorme impacto familiar que trae
-            consigo en el caso de ocurrir situaciones de mayor
-            gravedad.
-          </p>
+        <div class="col-lg-6 col-md-12">
+          <div class="about-image">
+            <img src="./assets/reduceRisks.jpg" style="object-fit: contain; height: 400px;" alt="About image">
+          </div>
         </div>
+        <!-- <h2 style="width: 100%; text-align: center; margin-top: 100px;">Identificar candidatos más
+          seguros permite
+          reducir la tasa de accidentes laborales
+          ayudando a generar ahorros y mejorar la
+          cultura de seguridad en la empresa</h2>
+        <div class="col-lg-4 col-md-12">
+          <div class="about-image">
+            <img src="./assets/reducesate.jpg" style="object-fit: contain; height: 300px; width: 300px;"
+              alt="About image">
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12">
+          <div class="about-content">
+            <p>El factor humano explicaría al menos el 80% de los
+              accidentes laborales, asociados a conductas inseguras o
+              temerarias. De esta manera, es esencial implementar
+              pruebas psicométricas para selección de personal que
+              identifiquen a personas más seguras, que no tomen
+              riesgos en el trabajo y se comporten de manera segura.
+              El uso de pruebas de seguridad laboral válidas y
+              confiables, permitirá enormes beneficios para las
+              empresas al reducir los costos asociados a los accidentes
+              laborales, asimismo el enorme impacto familiar que trae
+              consigo en el caso de ocurrir situaciones de mayor
+              gravedad.
+            </p>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>
 
-  <div class="container" style="margin-top: -90px;">
+  <div class="container">
     <div class="section-title">
       <h2>Especificaciones Técnicas</h2>
       <hr class="right">
@@ -681,12 +754,6 @@
           </div>
         </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center">
-        <button
-          style="background-color: #EE5A3F; padding: 10px; border: none; color: white; border-radius: 10px; cursor: pointer; height: fit-content;"
-          class="hoverColor">Solicita una demo</button>
-      </div>
-
       <div class="container2">
         <div class="wrapper">
           <div class="banner-image11">
@@ -701,9 +768,9 @@
       </div>
     </div>
     <section style="margin-top: 50px;">
-      <div class="container">
-        <div style="display: flex; gap: 50px; justify-content: center; flex-wrap: wrap;">
-          <div class="boxShadow" style="max-width: 400px; min-width: 250; padding-top: 20px; padding-left: 1%;">
+      <div class="container services-section ">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <!-- <div class="boxShadow" style="max-width: 400px; min-width: 250; padding-top: 20px; padding-left: 1%;">
             <h5 style="text-align: center; font-size: large; font-weight: 600;">Reduzca los costos asociados a los
               accidentes laborales en su
               empresa
@@ -720,42 +787,65 @@
               <li style="margin-top: 15px;">Logre una tasa de retorno de la inversión altamente atractiva
                 al usar la prueba Safe Behavioral DNA.</li>
             </ul>
+          </div> -->
+          <div class="col-lg-6">
+            <div class="single-services-item">
+              <div class="services-icon">
+                <img style="height: 50px; width: 50px; object-fit: contain;" src="./assets/reduceCost.png" alt="">
+              </div>
+              <h3>Reduzca los costos asociados a los
+                accidentes laborales en su
+                empresa</h3>
+              <p>Reduzca los accidentes laborales y las pérdidas financieras.
+                Aumente el prestigio de su empresa como lugar seguro y
+                libre de accidentes laborales.
+                Aumente la motivación de sus colaboradores y posicione a
+                su empresa como responsable socialmente.
+                SBDNA y su uso permite enormes beneficios para su
+                organización generando un amplio bienestar individual y
+                colectivo.
+                Logre una tasa de retorno de la inversión altamente atractiva
+                al usar la prueba Safe Behavioral DNA.</p>
+            </div>
           </div>
-          <div class="boxShadow" style="max-width: 400px; min-width: 250; padding-top: 20px; padding-left: 1%;">
-            <h5 style="text-align: center; font-size: large; font-weight: 600;">Fortalezca la cultura de seguridad en su
-              empresa
-            </h5>
-            <ul style="margin-top: 30px !important; list-style-type: none;">
-              <li> Identifique colaboradores con conductas seguras fortaleciendo una
-                cultura de seguridad en su empresa.</li>
-              <li style="margin-top: 15px;">Utilice nuestra plataforma de evaluaciones para complementar
-                otras áreas de evaluación de sus candidatos o empleados.</li>
-              <li style="margin-top: 15px;">Visualice los reportes y estadísticas de uso por medio de una
-                plataforma de fácil utilización.</li>
-              <li style="margin-top: 15px;">Servicio basado en la nube.</li>
-            </ul>
+          <div class="col-lg-6">
+            <div class="single-services-item">
+              <div class="services-icon">
+                <img style="height: 50px; width: 50px; object-fit: contain;" src="./assets/strengthenSafety.png" alt="">
+              </div>
+              <h3>Fortalezca la cultura de seguridad en su
+                empresa</h3>
+              <p>Identifique colaboradores con conductas seguras fortaleciendo una
+                cultura de seguridad en su empresa.
+                Utilice nuestra plataforma de evaluaciones para complementar
+                otras áreas de evaluación de sus candidatos o empleados.
+                Visualice los reportes y estadísticas de uso por medio de una
+                plataforma de fácil utilización.
+                Servicio basado en la nube.</p>
+            </div>
           </div>
-          <div class="boxShadow"
-            style="width: fit-content; padding-top: 20px; padding-left: 15px; padding-right: 30px;">
-            <h5 style="text-align: center; font-size: large; font-weight: 600;">Herramientas para desarrollo de sus
-              trabajadores
-            </h5>
-            <ul style="margin-top: 30px !important; list-style-type: none;">
-              <li> Identifique el nivel de riesgo de sus empleados a efectos de poder orientar
+          <div class="col-lg-6">
+            <div class="single-services-item">
+              <div class="services-icon">
+                <img style="height: 50px; width: 50px; object-fit: contain;" src="./assets/ToolsDevelopers.png" alt="">
+              </div>
+              <h3>Herramientas para desarrollo de sus
+                trabajadores</h3>
+              <p>Identifique el nivel de riesgo de sus empleados a efectos de poder orientar
                 programas de capacitación y desarrollo de conducta segura en este grupo,
                 permitiéndole optimizar recursos al focalizar los programas. Obtenga mejores
-                resultados.</li>
-              <li style="margin-top: 15px;">Use las orientaciones de desarrollo incluidos en el reporte de Safe
+                resultados.
+                Use las orientaciones de desarrollo incluidos en el reporte de Safe
                 Behavioral DNA
                 para elaborar programas de intervención y mejora de los indicadores de riesgo de
-                forma efectiva.</li>
-              <li style="margin-top: 15px;">Complemente su análisis de riesgo con nuestra herramienta exclusiva
+                forma efectiva.
+                Complemente su análisis de riesgo con nuestra herramienta exclusiva
                 WorkSafeRR, orientada a identificar los factores claves para la existencia de un
-                entorno laboral seguro.</li>
-              <li style="margin-top: 15px;">Reciba nuestras recomendaciones de nuestros expertos para apoyarle en la
+                entorno laboral seguro.
+                Reciba nuestras recomendaciones de nuestros expertos para apoyarle en la
                 planificación de las estrategias de implementación para los programas de
-                seguridad laboral.</li>
-            </ul>
+                seguridad laboral.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -778,59 +868,67 @@
                 Colombia, institución que provee
                 de herramientas de prevención de riesgo a más de 1 millón de trabajadores en Colombia</p>
 
-              <p style="margin-top: -5px; color: black; "> Para su creación, en primer lugar, se realizó inicialmente
+              <p style="margin-top: -15px; color: black; "> Para su creación, en primer lugar, se realizó inicialmente
                 una extensa
                 revisión bibliográfica de los factores individuales asociados a los accidentes laborales,
                 desarrollando un cuestionario preliminar aplicado a mil trabajadores pertenecientes a 11 empresas de
                 distintos sectores productivos, tales como construcción, minería, transporte, industria, servicios,
                 entre otros.</p>
 
-              <p style="margin-top: -5px; color: black; "> La muestra de los mil trabajadores consideraba dos grupos de
+              <p style="margin-top: -15px; color: black; "> La muestra de los mil trabajadores consideraba dos grupos de
                 empleados:
                 600 que habían sufrido accidentes laborales documentados en los últimos dos años y 400 que no habían
                 experimentado accidentes en el mismo periodo, ambos grupos pertenecientes a las mismas posiciones y
                 empresas seleccionadas.
               </p>
-              <p style="margin-top: -5px; color: black; "> Se elaboró un cuestionario de 136 ítems orientado a
+              <p style="margin-top: -15px; color: black; "> Se elaboró un cuestionario de 136 ítems orientado a
                 diferenciar ambos
                 grupos, alcanzando una confiabilidad de 0.93 y diferencias significativas entre ambos. El modelo
                 construido se fundamentó en la extensa evidencia científica original, identificando cuatro factores
                 que diferenciaban a ambos grupos de trabajadores en términos de su historial de accidentabilidad:
                 Cumplimiento de Normas, Autocontrol, Prudencia - Aversión al Riesgo y Concentración.
               </p>
-              <p style="margin-top: -5px; color: black; " class="text-2xl">Estos cuatro factores son fundamentales al
+              <p style="margin-top: -15px; color: black; " class="text-2xl">Estos cuatro factores son fundamentales al
                 momento de
                 diferenciar a personas de acuerdo con su comportamiento laboral seguro en las empresas
               </p>
-              <p style="margin-top: -5px; color: black; " class="text-2xl">Luego de un par de años de estudios
+              <p style="margin-top: -15px; color: black; " class="text-2xl">Luego de un par de años de estudios
                 internacionales,
                 abarcando países como México, Chile, Perú, Rusia, India, Italia, entre otros,
                 se decidió desarrollar dos versiones especiales y reducidas del modelo original, sobre la base de más de
                 200 mil aplicaciones
               </p>
 
-              <p style="margin-top: 30px; color: black;">
-                -- &nbsp; Safe Behavioral DNA R, versión de 77 ítems, aplicado en 12 minutos implementando una serie de
-                mejoras
-                respecto a la versión
-                original.</p>
-              <p style="margin-top: -10px; color: black;">
-                -- &nbsp; Safe Behavioral DNA DRIVER, versión de 84 ítems, orientado exclusivamente a la selección y
-                evaluación de choferes y
-                conductores de vehículos.
-              </p>
-              <p style="margin-top: 30px; color: black;">
+              <ul class="features-list"
+                style="list-style-type: none; margin-left: -15px; margin-top: 5px; margin-bottom: 15px;">
+
+                <li style="color: black;">
+                  <span>-- &nbsp; Safe Behavioral DNA R, versión de 77 ítems, aplicado en 12 minutos implementando una
+                    serie
+                    de
+                    mejoras
+                    respecto a la versión
+                    original.</span>
+                </li>
+                <li style="margin-top: 20px; color: black;">
+                  <span>-- &nbsp; Safe Behavioral DNA DRIVER, versión de 84 ítems, orientado exclusivamente a la
+                    selección y
+                    evaluación de choferes y
+                    conductores de vehículos.</span>
+                </li>
+              </ul>
+              <p style="color: black;">
                 Ambas soluciones operan en línea y proveen de un informe detallado sobre las acciones a implementar en
                 su uso para
                 evaluación de trabajadores actuales.
               </p>
-              <p style="margin-top: -10px; color: black;">Actualmente la prueba de seguridad laboral Safe Behavioral DNA
+              <p style="margin-top: -15px; color: black;">Actualmente la prueba de seguridad laboral Safe Behavioral DNA
                 es utilizada
                 en diversos países latinoamericanos por empresas
                 interesadas en reducir los accidentes laborales y conductas de riesgo, al mejorar sus procesos de
                 selección de personal.
               </p>
-              <p style="margin-top: -10px; color: black;">Dentro de los países donde se usa mayoritariamente destacan
+              <p style="margin-top: -15px; color: black;">Dentro de los países donde se usa mayoritariamente destacan
                 México, Chile,
                 Colombia, Perú, Brasil, Ecuador, Guatemala, entre
                 otros.</p>
@@ -839,23 +937,20 @@
 
             </div>
           </div>
-          <button
-            style="background-color: #EE5A3F; padding: 10px; border: none; color: white; border-radius: 10px; cursor: pointer; margin-left: -15px;"
-            class="hoverColor">Solicita una demo</button>
           <!--end .story_details-->
           <!--end .col-md-10-->
         </div><!--end .row-->
       </div>
   </div>
   </section>
-  <section>
-    <div class="container">
+  <section style="margin-top: -80px; padding-right: 5%; padding-left: 5%;" class=" " id="about-area">
+    <!-- <div class="container">
+      <h5 style="text-align: center; font-size: larger; font-weight: 700;">Reduce efectivamente la tasa de riesgos
+        laborales
+        identificando personas más seguras
+      </h5>
       <div class="imgCont">
         <div class="imgContin">
-          <h5 style="text-align: center; font-size: larger; font-weight: 700;">Reduce efectivamente la tasa de riesgos
-            laborales
-            identificando personas más seguras
-          </h5>
           <ul style="margin-top: 30px !important; list-style-type: none;">
             <li> La prueba de seguridad laboral Safe Behavioral
               DNA fue creada y validada luego de una extensa
@@ -865,24 +960,24 @@
               prueba de seguridad laboral válida y confiable
               que permite predecir el comportamiento seguro
               en las empresas.</li>
-            <li style="margin-top: 15px;">El Safe Behavioral DNA permite medir el ADN de
+            <li>El Safe Behavioral DNA permite medir el ADN de
               la conducta segura. Las empresas que utilizan
               Safe Behavioral DNA logran reducir su tasa de
               accidentes de forma efectiva</li>
           </ul>
         </div>
-        <img style="object-fit: contain;" class="imgContin1" src="/assets/carousel/Capture.JPG" alt="Slide 1">
+        <img style="object-fit: contain; " class="imgContin1" src="/assets/carousel/Capture.JPG" alt="Slide 1">
       </div>
 
       <div style="margin-top: 120px;">
         <div class="section-title">
           <h2>EMPRESA MEXICANA REDUCE RIESGOS LABORALES</h2>
-          <!-- <p></p> -->
-          <!-- <hr class="left"><i class="icon icon-basic-spread-text"></i> -->
+           <p></p> 
+           <hr class="left"><i class="icon icon-basic-spread-text"></i> 
           <hr class="right">
         </div>
         <div class="imgCont">
-          <img style="object-fit: contain;" class="imgContin" src="/assets/carousel/Capture1.jpg" alt="Slide 1">
+          <img style=" height: 400px !important;" class="imgContin" src="/assets/carousel/Capture1.jpg" alt="Slide 1">
           <div class="imgContin1">
             <ul style="margin-top: 30px !important; list-style-type: none;">
               <li> Una importante empresa industrial
@@ -930,38 +1025,67 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="row d-flex align-items-center bg-grey section-padding" style="margin-top: 20px;">
+      <h2 style="margin-bottom: 50px; width: 100%; text-align: center;">Reduce efectivamente la tasa de riesgos
+        laborales
+        identificando personas más seguras</h2>
+      <div class="col-lg-6 col-md-12">
+        <div class="about-content">
+
+          <p style="color: black !important;"> La prueba de seguridad laboral Safe Behavioral
+            DNA fue creada y validada luego de una extensa
+            investigación científica orientada a identificar los
+            rasgos que diferencian a personas que se
+            accidentan o no en el trabajo. Elaborando una
+            prueba de seguridad laboral válida y confiable
+            que permite predecir el comportamiento seguro
+            en las empresas.</p>
+          <p style="color: black !important;">
+            El Safe Behavioral DNA permite medir el ADN de
+            la conducta segura. Las empresas que utilizan
+            Safe Behavioral DNA logran reducir su tasa de
+            accidentes de forma efectiva
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="about-image">
+          <img src="./assets/carousel/Capture.png" style="object-fit: contain; width: 400px;" alt="About image">
+        </div>
+      </div>
     </div>
   </section>
 
   <section style="margin-top: -50px;">
-    <div class="container">
-      <div class="section-title">
-        <h2>Factores asociados a conducta laboral
+    <div class="bgBanner" style="padding-top: 60px; padding-bottom: 60px;">
+      <div class="section-title container">
+        <h2 style="color: white; font-size: xx-large;">Factores asociados a conducta laboral
           segura</h2>
         <hr class="right">
       </div>
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: -36px;">
-        <div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
-          <img src="./assets/Regulatory Compliance.png" alt="" style="object-fit: contain; height: 40px;">
-          <p style="margin-top: 15px;">Cumplimiento de Normas</p>
+      <div class="container"
+        style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: -36px;  gap: 10px;">
+        <div
+          style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column; margin-top: 5px;"
+          class="">
+          <img src="./assets/Regulatory.png" alt="" style="object-fit: contain; height: 80px; color: white;">
+          <p style="margin-top: 15px; color: white !important;">Cumplimiento de Normas</p>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
-          <img src="./assets/Autocontrol.png" alt="" style="object-fit: contain; height: 40px;">
-          <p style="margin-top: 15px;">Autocontrol</p>
+        <div style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column;">
+          <img src="./assets/Autocontrol.png" alt="" style="object-fit: contain; height: 80px;">
+          <p style="margin-top: 15px; color: white !important;">Autocontrol</p>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
-          <img src="./assets/Prudence - Aversion to Risk.png" alt="" style="object-fit: contain; height: 40px;">
-          <p style="margin-top: 15px;"><b> Prudencia </b>- Aversión al
+        <div style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column;">
+          <img src="./assets/Prudence-Aversion to Risl.png" alt="" style="object-fit: contain; height: 80px;">
+          <p style="margin-top: 15px; color: white !important;"><b> Prudencia </b>- Aversión al
             Riesgo</p>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
-          <img src="./assets/concentration.png" alt="" style="object-fit: contain; height: 40px;">
-          <p style="margin-top: 15px;">Concentración</p>
+        <div style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column;">
+          <img src="./assets/concentration.png" alt="" style="object-fit: contain; height: 80px;">
+          <p style="margin-top: 15px; color: white !important;">Concentración</p>
         </div>
       </div>
-      <h3 style="width: 100%; text-align: center; margin-top: 50px;">
-        Conozca Safe Behavioral DNA Driver para
-        choferes </h3>
   </section>
 
 
@@ -972,45 +1096,86 @@
         <hr class="right">
       </div>
       <div class="row benefitsCont">
-        <div class="story_details" style="margin-top: -70px; ;">
+        <div class="paras" style="margin-top: -70px; ;">
           <p style="color: black;">Como cliente de nuestras soluciones, su empresa recibirá acceso a las pruebas
-            escogidas y
-            a la plataforma de procesamiento online, asimismo a un apoyo de nuestros expertos para el
-            mejor uso de estas soluciones.</p>
-          <p style="margin-top: -30px; color: black !important;">Contará con capacitación en el uso de nuestras
+            escogidas y a la plataforma de procesamiento online, asimismo a un apoyo de nuestros expertos para el mejor
+            uso de estas soluciones.</p>
+          <p style="color: black !important;">Contará con capacitación en el uso de nuestras
             herramientas y apoyo a material y
             documentación de base de los modelos desarrollados.</p>
-          <p style="margin-top: -30px; color: black !important;">
+          <p style="color: black !important;">
             Estamos a su disposición para apoyarlo a través de una asesoría integral y profesional.
           </p>
-          <div>
-            <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">CAPACITACIÓN:</h3>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center">
+            <!-- <div>
+            <h3 style="margin-top: 20px; margin-bottom: 5px; color: #EE5A3F;">CAPACITACIÓN:</h3>
             <p style="color: black !important;">Desde el primer día y durante todo el ciclo de servicio, tendrá a su
               disposición capacitaciones de
               forma presencial o en línea, para todos los administradores de las pruebas. Apoyado con material
               audiovisual exclusivo de entrenamiento</p>
-          </div>
-          <div>
-            <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">APOYO:</h3>
-            <p style="color: black !important;">Nuestro equipo estará siempre disponible para contestar las preguntas de
-              los usuarios, por lo general
-              con tiempos de respuesta casi inmediatos, estableciendo una estrecha relación de largo plazo.</p>
-          </div>
-          <div>
-            <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">INVESTIGACIÓN:</h3>
-            <p style="color: black !important;">Investigaciones y publicaciones científicas ofrecen un respaldo sólido
-              para las decisiones en materia
-              de evaluación y permiten cálculos precisos de ROI.</p>
-          </div>
-          <div>
-            <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">ASESORÍA:</h3>
-            <p style="color: black !important;">Somos un equipo interdisciplinario de expertos e investigadores con
-              vasta experiencia en los campos
-              de la psicología, psicometría y la evaluación del personal.</p>
+          </div> -->
+            <div class="col-lg-6 ">
+              <div class="workprocess-single-item">
+                <div class="workprocess-icon-box">
+                  <img src="./assets/Training.png" style="width: 50px; height: 50px; object-fit: contain;" alt="icon">
+                </div>
+                <div class="workprocess-info">
+                  <h3>CAPACITACIÓN</h3>
+                  <p>Desde el primer día y durante todo el ciclo de servicio, tendrá a su
+                    disposición capacitaciones de
+                    forma presencial o en línea, para todos los administradores de las pruebas. Apoyado con material
+                    audiovisual exclusivo de entrenamiento</p>
+                </div>
+                <div class="workprocess-number-bg"><span>01</span></div>
+              </div>
+            </div>
+            <div class="col-lg-6 ">
+              <div class="workprocess-single-item">
+                <div class="workprocess-icon-box">
+                  <img src="./assets/Support.png" alt="icon" style="width: 50px; height: 50px; object-fit: contain;">
+                </div>
+                <div class="workprocess-info">
+                  <h3>APOYO</h3>
+                  <p>Nuestro equipo estará siempre disponible para contestar las preguntas de
+                    los usuarios, por lo general
+                    con tiempos de respuesta casi inmediatos, estableciendo una estrecha relación de largo plazo.</p>
+                </div>
+                <div class="workprocess-number-bg"><span>02</span></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="workprocess-single-item">
+                <div class="workprocess-icon-box">
+                  <img src="./assets/INVESTIGACIÓN.png" alt="icon"
+                    style="width: 50px; height: 50px; object-fit: contain;">
+                </div>
+                <div class="workprocess-info">
+                  <h3>INVESTIGACIÓN</h3>
+                  <p>Investigaciones y publicaciones científicas ofrecen un respaldo sólido
+                    para las decisiones en materia
+                    de evaluación y permiten cálculos precisos de ROI.</p>
+                </div>
+                <div class="workprocess-number-bg"><span>03</span></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="workprocess-single-item">
+                <div class="workprocess-icon-box">
+                  <img src="./assets/ADVISORY.png" alt="icon" style="width: 50px; height: 50px; object-fit: contain;">
+                </div>
+                <div class="workprocess-info">
+                  <h3>ASESORÍA</h3>
+                  <p>Somos un equipo interdisciplinario de expertos e investigadores con
+                    vasta experiencia en los campos
+                    de la psicología, psicometría y la evaluación del personal.</p>
+                </div>
+                <div class="workprocess-number-bg"><span>04</span></div>
+              </div>
+            </div>
           </div>
           <div class="imgCont2">
             <div class="imgCont2in">
-              <h3 style="margin-top: 30px; margin-bottom: 5px; color: #EE5A3F;">Reporte Individual:</h3>
+              <h3 style="margin-top: 20px; margin-bottom: 5px; color: #EE5A3F;">Reporte Individual:</h3>
               <p style="color: black !important;">Tome mejores decisiones de contratación de forma inmediata.
                 Usted visualiza los resultados de las personas evaluadas en línea luego de terminado el cuestionario.
               </p>
