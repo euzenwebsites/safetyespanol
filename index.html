@@ -74,7 +74,7 @@
 
     .container2:hover {
       -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+      transform: translateY(-10px);
     }
 
     /* .container2:hover {
@@ -99,6 +99,7 @@
       border: 1px solid rgba(255, 255, 255, 0.255)
     } */
     .banner-image1 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Goal.jpg);
       background-position: center;
       background-size: cover;
@@ -109,6 +110,7 @@
     }
 
     .banner-image2 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Available\ in.jpg);
       background-position: center;
       background-size: cover;
@@ -119,6 +121,7 @@
     }
 
     .banner-image3 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Factors.jpg);
       background-position: center;
       background-size: cover;
@@ -129,6 +132,7 @@
     }
 
     .banner-image4 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Used\ in.jpg);
       background-position: center;
       background-size: cover;
@@ -139,6 +143,7 @@
     }
 
     .banner-image5 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Test\ duration.jpg);
       background-position: center;
       background-size: cover;
@@ -149,6 +154,7 @@
     }
 
     .banner-image6 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/questions.jpg);
       background-position: center;
       background-size: cover;
@@ -159,6 +165,7 @@
     }
 
     .banner-image7 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Application\ format.jpg);
       background-position: center;
       background-size: cover;
@@ -169,6 +176,7 @@
     }
 
     .banner-image8 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Based\ on.jpg);
       background-position: center;
       background-size: cover;
@@ -179,6 +187,7 @@
     }
 
     .banner-image9 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Reliability.jpg);
       background-position: center;
       background-size: cover;
@@ -189,6 +198,7 @@
     }
 
     .banner-image10 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Reports.jpg);
       background-position: center;
       background-size: cover;
@@ -199,6 +209,7 @@
     }
 
     .banner-image11 {
+      background-repeat: no-repeat;
       background-image: url(/assets/Speification/Available\ tests.jpg);
       background-position: center;
       background-size: cover;
@@ -436,6 +447,21 @@
     .bgBanner>div>div>p {
       font-size: x-large;
     }
+
+    .staticsList {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .staticsList {
+        flex-direction: row;
+        gap: 0px;
+      }
+    }
   </style>
 
   <!-- Rale Font + Work Sans Font -->
@@ -485,12 +511,12 @@
   <section class="statics">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <!-- <div class="col">
           <div class="stats-list">
             <div class="stats-list-icon">
               <i class=""> <img src="/assets/application.png" style="width: 100px; object-fit: contain;" alt=""></i>
             </div>
-            <div class="stats-list-text wow fadeInUp" data-wow-delay=".1s">
+            <div class="stats-list-text " data-wow-delay=".1s">
               <h2>En línea</h2>
               <h3>Formato de aplicación</h3>
             </div>
@@ -515,6 +541,34 @@
             <div class="stats-list-text">
               <h2>0.93</h2>
               <h3>Confiabilidad</h3>
+            </div>
+          </div>
+        </div> -->
+        <div class="staticsList">
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="/assets/application.png" style="width: 100px; object-fit: contain;" alt="">
+            <div class="stats-list-text " data-wow-delay=".1s"
+              style="display: flex; flex-direction: column; align-items: center; justify-content: start;">
+              <h2>En línea</h2>
+              <h3>Formato de aplicación</h3>
+            </div>
+          </div>
+
+
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="/assets/application.png" style="width: 100px; object-fit: contain;" alt="">
+            <div class="stats-list-text " data-wow-delay=".1s"
+              style="display: flex; flex-direction: column; align-items: center; justify-content: start;">
+              <h2>Duración de la prueba</h2>
+              <h3>12 minutos</h3>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="/assets/application.png" style="width: 100px; object-fit: contain;" alt="">
+            <div class="stats-list-text " data-wow-delay=".1s"
+              style="display: flex; flex-direction: column; align-items: center; justify-content: start;">
+              <h2>Confiabilidad</h2>
+              <h3>0.93</h3>
             </div>
           </div>
         </div>
@@ -908,7 +962,7 @@
               </p>
 
               <ul class="features-list"
-                style="list-style-type: none; margin-left: -15px; margin-top: 5px; margin-bottom: 15px;">
+                style="list-style-type: none; margin-left: -15px; margin-top: 5px; margin-bottom: 15px; display: flex !important; flex-direction: column !important;">
 
                 <li style="color: black;">
                   <span>-- &nbsp; Safe Behavioral DNA R, versión de 77 ítems, aplicado en 12 minutos implementando una
@@ -1073,7 +1127,7 @@
         <hr class="right">
       </div>
       <div class="container"
-        style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: -36px;  gap: 10px;">
+        style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: -36px;  gap: 10px;align-items: center;">
         <div
           style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column; margin-top: 5px;"
           class="">
