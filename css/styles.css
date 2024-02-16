@@ -419,8 +419,8 @@ ul>li {
     #home {
         width: 100wh !important;
         height: 100vh !important;
-        background-position: bottom !important;
-        background-size: contain;
+        background-position: center !important;
+        background-size: cover;
     }
 
 }
@@ -430,7 +430,7 @@ ul>li {
         background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
             url(../assets/safety.jpg);
         background-color: #202020;
-        background-position: bottom;
+        background-position: center !important;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100wh;
